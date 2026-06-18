@@ -2,7 +2,7 @@
 
 * `firmware/` — Contains the complete STM32 C source code, FreeRTOS task abstractions, CMake compilation profiles, and hardware-specific configurations.
 
-## ⚡ Getting Started
+## Getting Started
 
 Because this project is target-compiled for **clone STM32F103 microcontrollers** and debugged natively via the **Black Magic Probe**, special debugger configuration limits must be applied before launching.
 
