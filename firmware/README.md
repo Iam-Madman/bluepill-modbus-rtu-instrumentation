@@ -1,5 +1,5 @@
 
-## 🚀 Debugging Clone STM32F103 Chips via Black Magic Probe (BMP)
+## Debugging Clone STM32F103 Chips via Black Magic Probe (BMP)
 
 This project utilizes a **clone/non-STMicroelectronics microcontroller** (such as a CKS32F103 or CS32F103 with Designer ID `0x80e` and Part ID `0x410`) on a Bluepill form factor.
 
@@ -7,7 +7,7 @@ Because the Black Magic Probe (BMP) identifies this target as an unknown ARM Cor
 
 ---
 
-## 📋 Prerequisites & Hardware Setup
+##  Prerequisites & Hardware Setup
 
 ### 1. Black Magic Probe Initialization
 
@@ -38,7 +38,7 @@ Because clone chips can exhibit erratic flash controller behaviors during active
 4. Connect, use the **Full chip erase** button (trash can icon) if the chip is completely locked up, or open your built `.elf`/`.bin` file to program and run.
 
 
-## 🛠️ Required Manual GDB Sequence
+##  Required Manual GDB Sequence
 
 When initializing a raw GDB session (`arm-none-eabi-gdb`), execute the following commands in order to connect, configure the memory spaces, and attach to the target:
 
@@ -69,7 +69,7 @@ set print pretty on
 
 ---
 
-## 💻 VS Code Configuration (`launch.json`)
+##  VS Code Configuration (`launch.json`)
 
 To automate the sequence above inside VS Code using the **Cortex-Debug** extension, your `.vscode/launch.json` must be configured with explicit `preAttachCommands` and `overrideRestartCommands`.
 
