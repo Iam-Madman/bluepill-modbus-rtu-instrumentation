@@ -1,0 +1,29 @@
+# --- Build Artifacts ---
+build/
+bin/
+obj/
+*.elf
+*.bin
+*.hex
+*.map
+*.o
+*.obj
+*.d
+
+# --- IDE & Editor Specific ---
+.vscode/ipch/
+.vscode/.cmaketools/
+.vscode/browse.vc.db
+# Un-comment the line below if you want your personal launch configs kept local only:
+# .vscode/launch.json
+
+# --- CMake Local Artifacts ---
+CMakeCache.txt
+CMakeFiles/
+CMakeUserPresets.json
+Makefile
+cmake_install.cmake
+
+# --- OS Generated Files ---
+.DS_Store
+Thumbs.db
